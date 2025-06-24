@@ -1,0 +1,247 @@
+.detailPage {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #f6f8fa;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 32px rgba(80,80,120,0.13);
+  border: 2.5px solid #8ec5fc;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 2.5rem;
+  text-align: start;
+  position: relative;
+}
+
+.imgWrap {
+  flex: 0 0 360px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.img {
+  width: 100%;
+  max-width: 360px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(80, 80, 120, 0.13);
+  background: #e0c3fc;
+  display: block;
+  border: 2.5px solid #8ec5fc;
+  transition: transform 0.18s;
+}
+
+.img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 32px rgba(80, 80, 120, 0.18);
+}
+
+.img.placeholder {
+  background: repeating-linear-gradient(135deg, #e0c3fc 0px, #e0c3fc 20px, #8ec5fc 20px, #8ec5fc 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  width: 100%;
+  max-width: 360px;
+  height: 240px;
+}
+
+.content {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.title {
+  font-size: 2.3rem;
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.price {
+  color: #2563eb;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.sectionTitle {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: #4f8cff;
+  margin: 1.2rem 0 0.5rem 0;
+  letter-spacing: 0.01em;
+}
+
+.desc {
+  white-space: pre-line;
+  font-family: inherit;
+  font-size: 1.13rem;
+  color: #333;
+  margin: 0 0 1.2rem 0;
+  text-align: inherit;
+  background: none;
+  border: none;
+}
+
+.descList {
+  margin: 0.5rem 0 1.5rem 0;
+  padding-left: 1.2em;
+  color: #333;
+  font-size: 1.08rem;
+}
+
+.longDesc {
+  white-space: pre-line;
+  font-family: inherit;
+  font-size: 1.08rem;
+  color: #444;
+  margin: 0 0 2rem 0;
+  text-align: inherit;
+  background: none;
+  border: none;
+}
+
+.bookBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-top: 0.5rem;
+  padding: 1.1rem 2.5rem;
+  font-size: 1.18rem;
+  background: linear-gradient(90deg, #4f8cff 0%, #8ec5fc 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.waIcon {
+  font-size: 1.3em;
+  margin-left: 0.3em;
+}
+
+.bookBtn:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #4f8cff 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.backLink {
+  margin-top: 2.5rem;
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+  z-index: 10;
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .topRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+  .bookBtn {
+    margin-left: 10px;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    text-align: center;
+  }
+  .imgWrap {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex: unset;
+  }
+  .img, .img.placeholder {
+    width: 90vw;
+    max-width: 320px;
+    min-width: 120px;
+    height: 250px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+    border-radius: 14px;
+    margin: 0;
+  }
+  .imgWrap {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex: unset;
+  }
+  .img, .img.placeholder {
+    width: 90vw;
+    max-width: 320px;
+    min-width: 120px;
+    height: 250px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .price {
+    font-size: 1.05rem;
+  }
+  .desc, .longDesc {
+    font-size: 0.98rem;
+  }
+} 

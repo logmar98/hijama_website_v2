@@ -1,0 +1,81 @@
+.finalCta {
+  padding: 2rem 1rem;
+  background: #e0c3fc;
+  text-align: center;
+}
+
+.finalCta p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bookBtn {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+}
+
+.bookBtn:hover {
+  background: #2563eb;
+}
+
+.wa, .phone {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #222;
+  border-radius: 20px;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s;
+}
+
+.wa:hover {
+  background: #25d366;
+  color: #fff;
+}
+
+.phone:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .actions {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .bookBtn, .wa, .phone {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .finalCta {
+    padding: 1rem 0.3rem;
+  }
+  .finalCta p {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  .bookBtn, .wa, .phone {
+    font-size: 0.98rem;
+    padding: 0.6rem 1rem;
+    border-radius: 18px;
+  }
+} 

@@ -1,0 +1,254 @@
+.pricing {
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  text-align: center;
+}
+
+.pricing h2 {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #e0f7fa;
+  border-radius: 18px;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  font-size: 1.2rem;
+  min-width: 180px;
+  max-width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s, box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+  overflow: visible;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(80, 80, 120, 0.18);
+}
+
+.session {
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.desc {
+  color: #555;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+
+.price {
+  color: #2563eb;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.discount {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.discountValue {
+  color: #d32f2f;
+  margin-left: 0.5rem;
+}
+
+.centerRow {
+  display: flex;
+  justify-content: center;
+}
+
+.imgPlaceholder {
+  width: 220px;
+  height: 140px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  margin: 0 auto 1.5rem auto;
+  display: block;
+  box-shadow: 0 4px 18px rgba(80, 80, 120, 0.14);
+}
+
+.hoverDesc {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 0.2rem;
+  pointer-events: none;
+  background: #fff;
+  border-radius: 12px;
+  white-space: pre-line;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid #8ec5fc;
+  box-shadow: 0 2px 12px rgba(80, 80, 120, 0.10);
+}
+
+.card:hover .hoverDesc,
+.card:focus-within .hoverDesc {
+  max-height: 200px;
+  opacity: 1;
+  pointer-events: auto;
+  padding: 1rem 0.5rem;
+}
+
+.moreBtn {
+  display: block;
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #4f8cff 0%, #8ec5fc 100%);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.moreBtn:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #4f8cff 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    gap: 1rem;
+  }
+  .card {
+    padding: 1.2rem 1rem;
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .pricing h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .grid {
+    gap: 0.8rem;
+  }
+  
+  .card {
+    padding: 1rem 0.8rem;
+    font-size: 1rem;
+  }
+  
+  .imgPlaceholder {
+    width: 180px;
+    height: 110px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .session {
+    font-size: 1.1rem;
+  }
+  
+  .desc {
+    font-size: 0.95rem;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .centerRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    min-width: unset;
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+  .imgPlaceholder {
+    width: 95vw;
+    max-width: 320px;
+    height: unset;
+    margin-bottom: 1rem;
+    margin:  10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing {
+    padding: 1.2rem 0.5rem;
+  }
+  
+  .pricing h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+  }
+  
+  .grid {
+    gap: 0.8rem;
+  }
+  
+  .card {
+    padding: 0.8rem 0.4rem;
+    font-size: 0.95rem;
+    border-radius: 14px;
+  }
+  
+  .imgPlaceholder {
+    width: 90vw;
+    max-width: 280px;
+    height: unset;
+    margin-bottom: 0.8rem;
+    margin:  10px;
+    border-radius: 16px;
+  }
+  
+  .session {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .desc {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    font-size: 1.1rem;
+  }
+  
+  .moreBtn {
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
+  }
+} 
