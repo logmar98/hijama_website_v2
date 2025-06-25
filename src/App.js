@@ -50,13 +50,10 @@ function MainApp() {
           <button className="cta-btn">{t.hero.cta}</button>
         </a>
       </header>
-      <div className="section-divider" />
+      <PricingSection />
       <HowItWorksSection />
-      <div className="section-divider" />
       <BenefitsSection />
-      <div className="section-divider" />
       <TestimonialsSection />
-      <div className="section-divider" />
       <section className="map-section">
         <h2 className="mapTitle">{t.footer.location}</h2>
         <iframe
@@ -70,13 +67,8 @@ function MainApp() {
           aria-label="Google Map"
         ></iframe>
       </section>
-      <div className="section-divider" />
       <AboutSection />
-      <div className="section-divider" />
-      <PricingSection />
-      <div className="section-divider" />
       <FAQSection />
-      <div className="section-divider" />
       <FinalCTASection />
       <Footer />
     </div>

@@ -64,9 +64,8 @@
     align-items: center;
   }
   .card {
-
-    min-width: unset;
-    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -85,6 +84,8 @@
     padding: 0.8rem 0.5rem;
     font-size: 0.98rem;
     border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
   }
   .avatar {
     width: 44px;

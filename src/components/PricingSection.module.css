@@ -197,9 +197,10 @@
   .imgPlaceholder {
     width: 95vw;
     max-width: 320px;
-    height: unset;
+    height: 220px;
     margin-bottom: 1rem;
-    margin:  10px;
+    object-fit: cover;
+    display: block;
   }
 }
 
@@ -226,10 +227,13 @@
   .imgPlaceholder {
     width: 90vw;
     max-width: 280px;
-    height: unset;
+    height: 150px;
     margin-bottom: 0.8rem;
-    margin:  10px;
     border-radius: 16px;
+    object-fit: cover;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   .session {
