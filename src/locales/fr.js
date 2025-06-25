@@ -1,7 +1,7 @@
 const fr = {
   language: 'Français',
   hero: {
-    headline: 'Cupping Thérapie par le Feu',
+    headline: 'Centre Al Salama de Hijama',
     subtitle: 'Un soin naturel pour votre bien-être',
     cta: 'Réserver maintenant'
   },
